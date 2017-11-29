@@ -1,0 +1,3 @@
+#!/bin/bash
+su -c "/opt/stackstate/simulator/demo/steps/step_1.sh" -s /bin/bash stackstate
+su -c "/opt/stackstate/simulator/demo/steps/step_2.sh &" -s /bin/bash stackstate

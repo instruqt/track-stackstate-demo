@@ -1,0 +1,77 @@
+slug: stackstate-demo
+icon: https://storage.googleapis.com/instruqt-frontend/img/tracks/default.png
+title: StackState Demo
+teaser: A guided demo of StackState
+description: Guided demo of Stackstate
+tags: []
+challenges:
+- slug: topology
+  credits: 10
+  title: Topology
+  teaser: A short description of the challenge.
+  notes:
+  - type: text
+    title: Layers
+    contents: |-
+      Explain the concept of Layers
+  - type: text
+    title: Domains
+    contents: |-
+      Explain the concept of Domains
+  assignment: |-
+      This is the assignment
+  difficulty: basic
+  timelimit: 900
+  points: 50
+  unlocks:
+  - telemetry
+  tabs:
+    internal:
+    - type: website
+      title: StackState
+      name: stackstate
+      port: 8080
+    external: []
+- slug: telemetry
+  credits: 10
+  title: Telemetry
+  teaser: A short description of the challenge.
+  notes: []
+  assignment: |-
+    The assignment the participant needs to complete in order to proceed.
+
+    You can use any GitHub flavoured markdown.
+  difficulty: basic
+  timelimit: 900
+  points: 50
+  unlocks: []
+  tabs:
+    internal:
+    - type: terminal
+      title: Shell
+      name: shell
+      port: 8080
+    external: []
+- slug: analytics
+  credits: 10
+  title: Analytics
+  teaser: A short description of the challenge.
+  notes: []
+  assignment: |-
+    The assignment the participant needs to complete in order to proceed.
+
+    You can use any GitHub flavoured markdown.
+  difficulty: basic
+  timelimit: 900
+  points: 50
+  unlocks:
+  - analytics
+  tabs:
+    internal:
+    - type: terminal
+      title: Shell
+      name: shell
+      port: 8080
+    external: []
+developers:
+- bas@instruqt.com

@@ -1,0 +1,12 @@
+template: containers
+configuration:
+  Containers:
+  - Image: gcr.io/instruqt/stackstate:latest
+    Name: stackstate
+    Ports:
+    - Exposed: true
+      Name: stackstate
+      Port: 7070
+    Privileged: false
+    Resources:
+      Memory: 8192
