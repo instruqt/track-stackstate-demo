@@ -1,77 +1,103 @@
+---
 slug: stackstate-demo
-icon: https://storage.googleapis.com/instruqt-frontend/img/tracks/default.png
+icon: https://storage.googleapis.com/instruqt-frontend/img/tracks/stackstate.png
 title: StackState Demo
 teaser: A guided demo of StackState
-description: Guided demo of Stackstate
+description: |-
+        This is a guided demo of Stackstate. In this demo we will explore Topology, Telemetry and Analytics
 tags: []
 challenges:
-- slug: topology
-  credits: 10
-  title: Topology
-  teaser: A short description of the challenge.
-  notes:
-  - type: text
-    title: Layers
-    contents: |-
-      Explain the concept of Layers
-  - type: text
-    title: Domains
-    contents: |-
-      Explain the concept of Domains
-  assignment: |-
-      This is the assignment
-  difficulty: basic
-  timelimit: 900
-  points: 50
-  unlocks:
-  - telemetry
-  tabs:
-    internal:
-    - type: website
-      title: StackState
-      name: stackstate
-      port: 8080
-    external: []
-- slug: telemetry
-  credits: 10
-  title: Telemetry
-  teaser: A short description of the challenge.
-  notes: []
-  assignment: |-
-    The assignment the participant needs to complete in order to proceed.
+  - slug: topology
+    credits: 10
+    title: Topology
+    teaser: A short description of the challenge.
+    notes:
+      - type: text
+        title: Layers
+        contents: |-
+            <iframe width="720" height="405" src="https://www.youtube.com/embed/V2zdc_LLoRw?autoplay=1" frameborder="0" allowfullscreen></iframe>
+      - type: text
+        title: Domains
+        contents: |-
+          Explain the concept of Domains
+    assignment: |-
+        *Assignment*
 
-    You can use any GitHub flavoured markdown.
-  difficulty: basic
-  timelimit: 900
-  points: 50
-  unlocks: []
-  tabs:
-    internal:
-    - type: terminal
-      title: Shell
-      name: shell
-      port: 8080
-    external: []
-- slug: analytics
-  credits: 10
-  title: Analytics
-  teaser: A short description of the challenge.
-  notes: []
-  assignment: |-
-    The assignment the participant needs to complete in order to proceed.
+            Click webserver1, show information in right pane.
+            When components are displayed, click webserver1 again (show merge
+              capabilities).
 
-    You can use any GitHub flavoured markdown.
-  difficulty: basic
-  timelimit: 900
-  points: 50
-  unlocks:
-  - analytics
-  tabs:
-    internal:
-    - type: terminal
-      title: Shell
-      name: shell
-      port: 8080
-    external: []
+    difficulty: basic
+    timelimit: 900
+    points: 50
+    unlocks:
+      - telemetry
+    tabs:
+      internal:
+        - type: website
+          title: StackState
+          name: stackstate
+          port: 7070
+      external: []
+  - slug: telemetry
+    credits: 10
+    title: Telemetry
+    teaser: A short description of the challenge.
+    notes: []
+    assignment: |-
+      Open Event Stream
+      Wait until components changed state. Show Events in event stream
+      hasize deployment at Payment Service caused full table scan issue on
+      base (because of lack of db indexing in line of code)).
+      Emphasize Web notification (sent to DBA and LoB owner).
+      Show different views (for different stakeholders IT Ops, Infra, LoB).
+      Go back to All View.
+      Click component DLL_DB. Show metric in right pane (full table scan
+      e)
+      Click on ElasticSearch icon, to show events. Highlight query that
+      ed the full table scan issue.
+      DBA can contact deployment team Root Cause was deployment of new
+      ication upgrade (with information about the line of code that caused
+      ). Let deployment team do roll forward (tell this will be done later,
+      t explain other features).
+      Click one of the Tomcat servers. Show metric (avg. response time per
+      transaction). Directly impacted by the full table scan issue on database.
+    difficulty: basic
+    timelimit: 900
+    points: 50
+    unlocks:
+      - analytics
+    tabs:
+      internal:
+        - type: website
+          title: StackState
+          name: stackstate
+          port: 7070
+      external: []
+  - slug: analytics
+    credits: 10
+    title: Analytics
+    teaser: A short description of the challenge.
+    notes: []
+    assignment: |-
+        Click component Payment_Service. Show anomaly detection graph (right
+        pane). Open edit to show configuration of anomaly detection (fundamental
+        period weekly, 4 weeks of data analyzed). Explain how baseline is
+        composed and StackState can alert when the actual metric goes outside
+        the established baseline).
+        Go to view “LoB”. Show Root Cause Analysis functionality. First
+        show “cause only”, then show “full cause tree”.
+        Go back to All View.
+    difficulty: basic
+    timelimit: 900
+    points: 50
+    unlocks: []
+    tabs:
+      internal:
+        - type: website
+          title: StackState
+          name: stackstate
+          port: 7070
+      external: []
 developers:
-- bas@instruqt.com
+  - bas@instruqt.com
