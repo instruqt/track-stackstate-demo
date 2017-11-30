@@ -38,6 +38,10 @@ challenges:
           title: StackState
           name: stackstate
           port: 7070
+        - type: terminal
+          title: Shell
+          name: stackstate
+          port: 8080
       external: []
   - slug: telemetry
     credits: 10
@@ -73,6 +77,10 @@ challenges:
           title: StackState
           name: stackstate
           port: 7070
+        - type: terminal
+          title: Shell
+          name: stackstate
+          port: 8080
       external: []
   - slug: analytics
     credits: 10
@@ -98,6 +106,10 @@ challenges:
           title: StackState
           name: stackstate
           port: 7070
+        - type: terminal
+          title: Shell
+          name: stackstate
+          port: 8080
       external: []
 developers:
   - bas@instruqt.com
