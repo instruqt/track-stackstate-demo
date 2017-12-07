@@ -1,0 +1,2 @@
+#!/bin/bash
+su -c "/opt/stackstate/simulator/demo/steps/step_4.sh" -s /bin/bash stackstate

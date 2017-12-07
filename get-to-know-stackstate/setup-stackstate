@@ -1,0 +1,7 @@
+#!/bin/bash
+until nc -z localhost 7070
+do
+    echo "Waiting for the StackState interface to become healthy..."
+    sleep 5
+done
+su -c "/opt/stackstate/simulator/demo/steps/step_0.sh" -s /bin/bash stackstate
