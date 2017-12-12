@@ -102,7 +102,7 @@ challenges:
 - slug: telemetry
   credits: 10
   title: Telemetry
-  teaser: A short description of the challenge.
+  teaser: In this scenario, we will see how StackState is able to merge telemetry into the model.
   notes:
     - type: text
       title: Telemetry
@@ -141,7 +141,7 @@ challenges:
 - slug: root-cause-analysis
   credits: 10
   title: Root cause analysis
-  teaser: In this scenario we will have a look how StackState helps you finding the root cause of a problem in seconds, rather than in hours or days…
+  teaser: In this scenario we will have a look how StackState helps you to find the root cause of a problem in seconds, rather than in hours or days.
   notes:
     - type: text
       title: Root cause analysis
