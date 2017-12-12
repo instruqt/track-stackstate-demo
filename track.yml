@@ -174,7 +174,7 @@ challenges:
   timelimit: 900
   points: 50
   unlocks:
-  - impact-analysis
+    - impact-analysis
   tabs:
     internal:
     - type: website
