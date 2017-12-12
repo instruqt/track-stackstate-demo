@@ -1,6 +1,6 @@
 slug: stackstate-demo
 icon: https://storage.googleapis.com/instruqt-frontend/img/tracks/stackstate.png
-title: Creating The Zero Downtime Enterprise
+title: A hands-on tour of StackState
 teaser: The market-leading Algorithmic IT Operations platform that automatically discovers, models and monitors your environment at scale.
 description: |-
   Topology, Telemetry and Time are a way to model the configuration of what is going on in any IT system; Large or small, based on microservices, containers, web services, monoliths, serverless, cloud or on-premise.
@@ -146,7 +146,7 @@ challenges:
   teaser: In this scenario we will have a look how StackState helps you to find the root cause of a problem in seconds, rather than in hours or days.
   notes:
     - type: text
-      title: Root cause analysis
+      title: Root cause analysis3
       contents: |-
         Can you reduce the amount of time that’s being wasted on pinpointing where failures originate from?
         Easily determine which business services are impacted? StackState's root cause analysis provides instant insight into the cause and impact of any change or failure.
