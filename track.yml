@@ -142,7 +142,11 @@ challenges:
   credits: 10
   title: Root cause analysis
   teaser: In this scenario we will have a look how StackState helps you finding the root cause of a problem in seconds, rather than in hours or days…
-  notes: []
+  notes:
+    - type: text
+      title: Root cause analysis
+      contents: |-
+        Can you reduce the amount of time that’s being wasted on pinpointing where failures originate from? Easily determine which business services are impacted? With StackState, you can. We built the world’s first Algorithmic IT Operations platform that helps enterprises to lower their mean-time-to-repair and eliminate downtime across all layers of the IT landscape. By having a unified view of your entire landscape, from business service to hardware rack, from on prem to cloud and from legacy to microservices, Root Cause Analysis will become far more easy and faster.
   assignment: |-
     1. Click on the **menu button** at the left upper corner.
     2. Select **All View**.
@@ -184,7 +188,13 @@ challenges:
   credits: 10
   title: Impact Analysis
   teaser: In this scenario, we will see how StackState enables impact analysis capabilities.
-  notes: []
+  notes:
+    - type: text
+      title: Impact Analysis
+      contents: |-
+        By having a unified view of your entire IT landscape, an understanding on how components are related to each other is visualized.
+        This allows you to immediately see how infrastructure components affect business services and how business service depend on these infrastructure components.
+        To be able to do proper impact analysis, it is crucial to have this kind of information available.
   assignment: |-
     1. Click the **Open Show and Hide Pane** button.
     2. In the text box below **Components**, type in: **VM**.
