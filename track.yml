@@ -2,28 +2,34 @@ slug: stackstate-demo
 icon: https://storage.googleapis.com/instruqt-frontend/img/tracks/stackstate.png
 title: StackState Demo
 teaser: A guided demo of StackState
-description: This is a guided demo of Stackstate. In this demo we will explore Topology,
+description: This is a guided demo of StackState. In this demo we will explore Topology,
   Telemetry and Analytics
 tags: []
 challenges:
 - slug: get-to-know-stackstate
   credits: 10
-  title: Get to know Stackstate
+  title: Get to know StackState
   teaser: In this scenario you will have a look at the user interface of StackState. The concept of Layers, Domains and Environments will be explained.
   notes:
   - type: video
     title: 3 tier model explained
     url: "https://www.youtube.com/embed/V2zdc_LLoRw?autoplay=1&rel=0"
   assignment: |-
-    1. Click on the menu button at the left upper corner:
+    1. Click on the **menu button** at the left upper corner:
+
       ![Menu Button](https://storage.googleapis.com/instruqt-stackstate-assets/menu_button.png)
-    2. Select All View. This will open the StackState canvas. As you can see, no components are known yet.
-    3. Remove the pop-up by clicking on the X in the upper right corner.
-    4. The vertical axis represents the so called “Layers”, the horizontal axis represents the so called “Domains”.
+
+    2. Select **All View**. This will open the StackState canvas. As you can see, no components are known yet.
+    3. Remove the pop-up by clicking on the **X** in the upper right corner.
+    4. The vertical axis represents the so called **Layers**, the horizontal axis represents the so called **Domains**.
+    5. On the left pane, click the **Grid button**:
+
       ![Grid Button](https://storage.googleapis.com/instruqt-stackstate-assets/grid_button.png)
-    5. On the left pane, click the Grid button:
-    6. This will open the Grid View. As you can see, Layers, Domains and Environments are shown. These are completely configurable, so any data model can be represented in StackState.
-    **In the next challenge, we will synchronize with two data sources to retrieve be able to build the topology view.**
+
+    6. This will open the **Grid View**. As you can see, Layers, Domains and **Environments** are shown. These are completely configurable, so any data model can be represented in StackState.
+
+
+    *In the next challenge, we will synchronize with two data sources to be able to build the topology view.*
   difficulty: basic
   timelimit: 900
   points: 50
@@ -55,18 +61,28 @@ challenges:
       In this scenario, this information is retrieved from a Mesos environment and Splunk.
       This is what we call “synchronization”. In real time.
   assignment: |-
-    1. Click on the menu button at the left upper corner.
-    2. Select All View. This will open the StackState canvas. As you can see, all components and their relations are now visualized. The components are automatically plotted at the right Layer and at the right Domain. This is accomplished by applying our mapping functionality to the discovered components.
-    3. Click on the menu button at the left upper corner again.
-    4. Select some other Views, like “Infrastructure view”, “ITOps” or “Line of Business” and have a look at them. As you can see, StackState is able to only show those components that are relevant to the stakeholder. In the next steps we will see how we do so…
-    5. Repeat step 1 and 2.
-    6. On the left bar, click the Grid button:
-    7. Now click on one or more of the non-greyed-out buttons (eye) at the left side of the Layer- or Domain name:
+    1. Click on the **menu button** at the left upper corner.
+    2. Select **All View**. This will open the StackState canvas.
+    As you can see, all components and their relations are now visualized.
+    The components are automatically plotted at the right **Layer** and at the right **Domain**.
+    This is accomplished by applying our **mapping functionality** to the **discovered components**.
+    3. Click on the **menu button** at the left upper corner again.
+    4. Select some other Views, like **Infrastructure view**, **ITOps** or **Line of Business** and have a look at them.
+    As you can see, StackState is able to only show those components that are relevant to the stakeholder.
+    In the next steps we will see how we do so...
+    5. Repeat step 1 and 2 to go back to the All View.
+    6. On the left bar, click the **Grid button**.
+    7. Now click on one or more of the non-greyed-out buttons (**eye**) at the left side of the Layer- or Domain name:
+
       ![Layers](https://storage.googleapis.com/instruqt-stackstate-assets/topology_7.png)
 
     See what happens...
 
-    Dotted lines are now shown. StackState understands there is a relation between components which are connected by these dotted lines, but there are components in between that are not visualized in the view. These are what we call “indirect relations”.
+    Dotted lines are now shown. StackState understands there is a relation between components which are connected by these dotted lines, but there are components in between that are not visualized in the view. These are what we call **indirect relations**.
+
+    8. Click on the **menu button** at the left upper corner:
+    9. Select **All View**
+    10. Switch on **Group components by type and state** and change the value from **8 to 2**.
   difficulty: basic
   timelimit: 900
   points: 50
@@ -95,14 +111,17 @@ challenges:
         Telemetry data could be metrics, events, log files, changes and any other relevant data you have available in different tools.
         By merging the topology and telemetry, you will have one unified view of your complete business chain.
   assignment: |-
-    1. Click on the menu button at the left upper corner.
-    2. Select All View.
-    3. Click Webserver1 in the topology view. The right pane opens and shows telemetry information about the selected component.
-    4. Click Show More in the right pane (Info part).
-    5. Click Tomcat1 in the topology. Have a look at the right pane.
-    6. Click Webserver1 again. Now click at the Plus-sign (+) in the right middle of the right pane:
+    1. Click on the **menu button** at the left upper corner.
+    2. Select **All View**.
+    3. Click **Webserver1** in the **topology view**.
+    The right pane opens and shows telemetry information about the selected component.
+    4. Click **Show More** in the right pane (**Info panel**).
+    5. Click **Tomcat1** in the topology. Have a look at the **Info panel**.
+    6. Click **Webserver1** again. Now click on the **Add Healthcheck button** in the right middle of the right pane:
+
       ![Healthcheck](https://storage.googleapis.com/instruqt-stackstate-assets/telemetry_6.png)
-    7. This will open the Check Settings page. Investigate for yourself (e.g. have a look at all available check functions…).
+
+    7. This will open the **Check Settings page**. Investigate for yourself (e.g. have a look at all available check functions...).
   difficulty: basic
   timelimit: 900
   points: 50
@@ -125,17 +144,26 @@ challenges:
   teaser: In this scenario we will have a look how StackState helps you finding the root cause of a problem in seconds, rather than in hours or days…
   notes: []
   assignment: |-
-    1. Click on the menu button at the left upper corner:
-    2. Select All View:
-    3. Click the Event Stream button at the right side of the screen: . The Events pane opens now. Here you can see all events that took place. Note that the components in the view also changed color. Red means “Critical” and orange means “Deviating”.
+    1. Click on the **menu button** at the left upper corner.
+    2. Select **All View**.
+    3. Click the **Event Stream button** at the right side of the screen. This will open the **Events pane**. Here you can see all events that took place.
+    Note that the components in the view also changed color.
+    Red means **Critical** and orange means **Deviating**.
+
       ![Event Stream](https://storage.googleapis.com/instruqt-stackstate-assets/root_cause_2.png)
-    4. Click on all the red and orange components in the topology view. The right pane will now display in-context information about the selected component (like metric streams and alerts/events).
-    5. Now click the Problems button at the right side of the screen: . The right pane now shows the problems detected and how they might be related. Note that the root cause is displayed on top of this list.
+
+    4. Click on all the **Critical** and **Deviating** components in the topology view. The right pane will now show **in-context information** about the selected component (such as **metric streams** and **alerts/events**).
+    5. Now click the **Problems button** at the right side of the screen.
+    The right pane now shows the **problems detected** and how they might be related. Note that the **root cause** is displayed at the top of this list.
+
       ![Problem Pane](https://storage.googleapis.com/instruqt-stackstate-assets/root_cause_4.png)
+
     6. Have look at the “time slider” at the bottom of the page. Click a bit left from the arrow:
+
       ![Time Slider](https://storage.googleapis.com/instruqt-stackstate-assets/root_cause_6.png)
-    The Topology view now reflects the situation at the selected time. Click at some more different times and see what happens.
-    7. To go back to the current situation, click “Back to live” at the blue bar at the top of the page.
+
+    The Topology view now reflects the situation at the selected time. Try selecting different positions on the timeline.
+    7. To return to viewing the live situation, click **Back to live** in the blue bar at the top of the page.
   difficulty: basic
   timelimit: 900
   points: 50
@@ -158,18 +186,18 @@ challenges:
   teaser: In this scenario, we will see how StackState enables impact analysis capabilities.
   notes: []
   assignment: |-
-    1. Click the ”OPEN SHOW AND HIDE PANE” button.
-    2. In the text box below Components, type in: VM. Wait until the popup box appears, then select VM_J2EE1.
-    3. The VM_J2EE1 component is now shown in the topology view. Right click on the component and select “Show”, then select “Dependents (up)” and then “1 level”.
-    4. Repeat step 3, but now select “All levels” instead of “1 level”.
-    5. Repeat step 3 and 4, but now with “Dependencies (down)” instead of “Dependents (up)”.
-    6. At the left bar, select the wheel (lowest button in this bar). This will open the Visualization Settings pane.
-    7. Switch on “Organize components by Layers”
-    8. Switch on “Organize components by Domains”
-    9. Switch on “Show all indirect relations”.
-    10. Click on the menu button at the left upper corner:
-    11. Select All View
-    12. Switch on “Group components by type and state” and change the value from 8 to 2.
+    1. Click the **Open Show and Hide Pane** button.
+    2. In the text box below **Components**, type in: **VM**.
+    Wait until the popup box appears, then select **VM_J2EE1**.
+    3. The VM_J2EE1 component is now shown in the topology view.
+    Right click on the component and select **Show**, then select **Dependents (up)** and then **1 level**.
+    4. Repeat step 3, but now select **All levels** instead of **1 level**, to show **all** dependent components of VM_J2EE1.
+    5. Repeat step 3 and 4, but now with **Dependencies (down)** instead of **Dependents (up)**.
+    6. At the left bar, select the **Visualizations settings button** (the button in the bottom this bar).
+    This will open the **Visualization Settings pane**.
+    7. Switch on **Organize components by Layers**.
+    8. Switch on **Organize components by Domains**.
+    9. Switch on **Show all indirect relations**.
   difficulty: basic
   timelimit: 900
   points: 50
