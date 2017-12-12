@@ -1,9 +1,11 @@
 slug: stackstate-demo
 icon: https://storage.googleapis.com/instruqt-frontend/img/tracks/stackstate.png
-title: StackState Demo
-teaser: A guided demo of StackState
-description: This is a guided demo of StackState. In this demo we will explore Topology,
-  Telemetry and Analytics
+title: Creating The Zero Downtime Enterprise
+teaser: The market-leading Algorithmic IT Operations platform that automatically discovers, models and monitors your environment at scale.
+description: |-
+Topology, Telemetry and Time are a way to model the configuration of what is going on in any IT system; Large or small, based on microservices, containers, web services, monoliths, serverless, cloud or on-premise.
+It doesn’t matter. StackState is able to capture your entire IT stack in one data model across teams and tools.
+![The three tier model visualized](https://storage.googleapis.com/instruqt-stackstate-assets/stackstate-ttt.png)
 tags: []
 challenges:
 - slug: get-to-know-stackstate

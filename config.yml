@@ -1,7 +1,7 @@
 template: virtualmachines
 configuration:
   VirtualMachines:
-  - Image: stackstate-1-7-1
+  - Image: stackstate-1-7-2
     MachineType: n1-standard-4
     Name: stackstate
     Ports:
