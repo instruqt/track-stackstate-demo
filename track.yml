@@ -86,7 +86,13 @@ challenges:
     8. Note that an * has been added to the name of the view in the upper bar.
     This indicates something has changed in the saved view.
     Go back to the original view, by clicking on the **view: All View** breadcrumb.
+
+      ![All view](https://storage.googleapis.com/instruqt-stackstate-assets/challenge_2_allview.png)
+
     9. At the left bar, click on the **Visualization Settings** button.
+
+      ![Settings](https://storage.googleapis.com/instruqt-stackstate-assets/challenge_2_cog.png)
+
     10. Change the value in the “Minimum amount of components in a group” field from 8 to 2.
     The result will show a more compact view: Components of the same type, in the same Layer and in the same State, will be grouped together if the number is more than the value set.
     The groups are shown as hexagons.
