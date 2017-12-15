@@ -33,7 +33,7 @@ challenges:
 
     *In the next challenge, we will synchronize with two data sources to be able to build the topology view.*
   difficulty: basic
-  timelimit: 900
+  timelimit: 300
   points: 50
   unlocks:
   - topology
@@ -80,13 +80,19 @@ challenges:
 
     See what happens...
 
-    Dotted lines are now shown. StackState understands there is a relation between components which are connected by these dotted lines, but there are components in between that are not visualized in the view. These are what we call **indirect relations**.
+    Dotted lines are now shown. StackState understands there is a relation between components which are connected by these dotted lines, but there are components in between that are not visualized in the view.
+    These are what we call **indirect relations**.
 
-    8. Click on the **menu button** at the left upper corner:
-    9. Select **All View**
-    10. Switch on **Group components by type and state** and change the value from **8 to 2**.
+    8. Note that an * has been added to the name of the view in the upper bar.
+    This indicates something has changed in the saved view.
+    Go back to the original view, by clicking on the **view: All View** breadcrumb.
+    9. At the left bar, click on the **Visualization Settings** button.
+    10. Change the value in the “Minimum amount of components in a group” field from 8 to 2.
+    The result will show a more compact view: Components of the same type, in the same Layer and in the same State, will be grouped together if the number is more than the value set.
+    The groups are shown as hexagons.
+    11. Click on one of the groups (one of the hexagons). This will open the right pane which will show all individual members of the group.
   difficulty: basic
-  timelimit: 900
+  timelimit: 300
   points: 50
   unlocks:
   - telemetry
@@ -124,8 +130,11 @@ challenges:
       ![Healthcheck](https://storage.googleapis.com/instruqt-stackstate-assets/telemetry_6.png)
 
     7. This will open the **Check Settings page**. Investigate for yourself (e.g. have a look at all available check functions...).
+    With the check function, StackState enables you to put checks (analytical and statistical rules) on metrics and events.
+    An example would be setting the threshold for a certain metric. e.g.
+    When %CPU used > 80, change component to Deviating Status, when %CPU > 80, change state to Critical.
   difficulty: basic
-  timelimit: 900
+  timelimit: 300
   points: 50
   unlocks:
   - root-cause-analysis
@@ -172,7 +181,7 @@ challenges:
     The Topology view now reflects the situation at the selected time. Try selecting different positions on the timeline.
     7. To return to viewing the live situation, click **Back to live** in the blue bar at the top of the page.
   difficulty: basic
-  timelimit: 900
+  timelimit: 300
   points: 50
   unlocks:
     - impact-analysis
@@ -211,7 +220,7 @@ challenges:
     8. Switch on **Organize components by Domains**.
     9. Switch on **Show all indirect relations**.
   difficulty: basic
-  timelimit: 900
+  timelimit: 300
   points: 50
   unlocks: []
   tabs:
