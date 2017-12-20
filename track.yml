@@ -13,9 +13,23 @@ challenges:
   title: Get to know StackState
   teaser: In this scenario you will have a look at the user interface of StackState. The concept of Layers, Domains and Environments will be explained.
   notes:
+  - type: text
+    title: Setting up your environment
+    contents: |-
+      We are currently **setting up** your personalized environment and **starting StackState**.
+      StackState is being configured and made ready for you to explore.
+
+      This might take a minute.
+  - type: text
+    title: What you can expect in this tour
+    contents: |-
+      In this **hands-on tour** you can experience StackState for yourself by following the **guided steps**.
+      You’ll find out how StackState **visualizes the topology** of your IT environment – **from hardware to business processes**.
+
+      Let’s start off by watching a video **introduction to StackState**, while the setup finishes.
   - type: video
     title: 3 tier model explained
-    url: "https://www.youtube.com/embed/V2zdc_LLoRw?autoplay=1&rel=0"
+    url: "https://www.youtube.com/embed/V2zdc_LLoRw?autoplay=0&rel=0"
   assignment: |-
     1. Click on the **menu button** at the left upper corner:
 
@@ -43,25 +57,29 @@ challenges:
       title: StackState
       name: stackstate
       port: 7070
-    - type: terminal
-      title: Shell
-      name: stackstate
-      port: 8080
-    external: []
+    external:
+    - title: Documentation
+      url: https://docs.stackstate.com
 - slug: topology
   credits: 10
   title: Topology
   teaser: In this scenario we will have a closer look on how StackState visualizes the topology of your business service.
   notes:
   - type: text
-    title: Topology
+    title: Next steps
     contents: |-
-      StackState is able to visualize the complete topology of your Business Chain.
-      From Business Service to hardware rack and everything in between.
-      From legacy to microservices and from on premise to cloud.
-      This is done by getting information about components and their relations from a variety of data sources.
-      In this scenario, this information is retrieved from a Mesos environment and Splunk.
-      This is what we call “synchronization”. In real time.
+      Great! You just got a first glance of the **user interface** of StackState.
+      Let’s take it one step further by **adding an example environment** with **topology data**.
+      This step is all about **exploring the topology** of an IT environment and its **dependencies**.
+  - type: text
+    title: Business topology
+    contents: |-
+      StackState is able to visualize the **complete topology** of your **business chain**.
+      This is done by getting information from a **variety of data sources**.
+      In this scenario, the topology data is retrieved from a **Mesos** and **Splunk** environment and merged into a **single view**.
+  - type: video
+    title: topology
+    url: "https://www.youtube.com/embed/aVyaCZgUolg?autoplay=0&rel=0"
   assignment: |-
     1. Click on the **menu button** at the left upper corner.
     2. Select **All View**. This will open the StackState canvas.
@@ -108,11 +126,9 @@ challenges:
       title: StackState
       name: stackstate
       port: 7070
-    - type: terminal
-      title: Shell
-      name: stackstate
-      port: 8080
-    external: []
+    external:
+    - title: Documentation
+      url: https://docs.stackstate.com
 - slug: telemetry
   credits: 10
   title: Telemetry
@@ -121,9 +137,13 @@ challenges:
     - type: text
       title: Telemetry
       contents: |-
-        StackState is able to synchronize to a variety of data sources to merge telemetry data into the model (and automatically map them to the right components in the topology view).
-        Telemetry data could be metrics, events, log files, changes and any other relevant data you have available in different tools.
-        By merging the topology and telemetry, you will have one unified view of your complete business chain.
+        Good work. Now let’s add some **telemetry data** to the model and see what happens.
+        Telemetry data could be **metrics**, **events**, **log files**, **changes** and any other relevant data you have available in your environment.
+
+        By **merging topology and telemetry**, you will have **one unified view** of your complete business chain.
+    - type: video
+      title: Telemetry
+      url: "https://www.youtube.com/embed/zK24uUQAdKY?autoplay=0&rel=0"
   assignment: |-
     1. Click on the **menu button** at the left upper corner.
     2. Select **All View**.
@@ -150,21 +170,19 @@ challenges:
       title: StackState
       name: stackstate
       port: 7070
-    - type: terminal
-      title: Shell
-      name: stackstate
-      port: 8080
-    external: []
+    external:
+    - title: Documentation
+      url: https://docs.stackstate.com
 - slug: root-cause-analysis
   credits: 10
   title: Root cause analysis
   teaser: In this scenario we will have a look how StackState helps you to find the root cause of a problem in seconds, rather than in hours or days.
   notes:
     - type: text
-      title: Root cause analysis3
+      title: Root Cause Analysis
       contents: |-
-        Can you reduce the amount of time that’s being wasted on pinpointing where failures originate from?
-        Easily determine which business services are impacted? StackState's root cause analysis provides instant insight into the cause and impact of any change or failure.
+        Awesome! Let’s demonstrate the **root cause analysis** capabilities by simulating a **failure-scenario**.
+        You’ll experience how StackState gives insight into the **cause and impact** of any **change or failure**.
   assignment: |-
     1. Click on the **menu button** at the left upper corner.
     2. Select **All View**.
@@ -197,21 +215,26 @@ challenges:
       title: StackState
       name: stackstate
       port: 7070
-    - type: terminal
-      title: Shell
-      name: stackstate
-      port: 8080
-    external: []
+    external:
+    - title: Documentation
+      url: https://docs.stackstate.com
 - slug: impact-analysis
   credits: 10
   title: Impact Analysis
   teaser: In this scenario, you will experience the Impact Analysis capabilities of StackState.
   notes:
     - type: text
+      title: What you can expect in this tour
+      contents: |-
+        This is what you can expect in this step of the tour...
+    - type: text
       title: Impact Analysis
       contents: |-
-        StackState not only automatically pinpoints the root cause of problems, it also automatically quantifies the impact that problem has on your entire business chain.
-        Automatic impact analysis provides you with critical information to know what, when and why something happened.
+        In the final step of this tour we’ll take a look at impact analysis.
+        Suppose you have to reboot a VM. You want to know which parts of the IT landscape could be affected.
+        In order to get this knowledge, you need to be aware of all the dependencies between your VM and the rest of the IT landscape.
+
+        StackState gives you the insight needed to take an informed decision.
   assignment: |-
     1. Click the **Open Show and Hide Pane** button.
     2. In the text box below **Components**, type in: **VM**.
@@ -235,11 +258,9 @@ challenges:
       title: StackState
       name: stackstate
       port: 7070
-    - type: terminal
-      title: Shell
-      name: shell
-      port: 8080
-    external: []
+    external:
+    - title: Documentation
+      url: https://docs.stackstate.com
 developers:
 - bas@instruqt.com
 - marts@stackstate.com
