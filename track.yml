@@ -1,4 +1,5 @@
 slug: stackstate-demo
+type: sandbox
 icon: https://storage.googleapis.com/instruqt-frontend/img/tracks/stackstate.png
 title: A hands-on tour of StackState
 teaser: The market-leading Algorithmic IT Operations platform that automatically discovers, models and monitors your environment at scale.
@@ -126,6 +127,7 @@ challenges:
       title: StackState
       name: stackstate
       port: 7070
+      path: "/#/topology/view/All View/graph"
     external:
     - title: Documentation
       url: https://docs.stackstate.com
