@@ -224,17 +224,14 @@ challenges:
   teaser: In this scenario, you will experience the Impact Analysis capabilities of StackState.
   notes:
     - type: text
-      title: What you can expect in this tour
-      contents: |-
-        This is what you can expect in this step of the tour...
-    - type: text
       title: Impact Analysis
       contents: |-
-        In the final step of this tour we’ll take a look at impact analysis.
-        Suppose you have to reboot a VM. You want to know which parts of the IT landscape could be affected.
-        In order to get this knowledge, you need to be aware of all the dependencies between your VM and the rest of the IT landscape.
+        In the final step of this tour we’ll take a look at **impact analysis**.
 
-        StackState gives you the insight needed to take an informed decision.
+        Suppose you have to **reboot a VM**. You want to know which parts of the IT landscape **could be affected**.
+        In order to get this knowledge, you need to be aware of **all the dependencies** between your VM and the rest of the IT landscape.
+
+        StackState gives you the **insight** needed to take an **informed decision**.
   assignment: |-
     1. Click the **Open Show and Hide Pane** button.
     2. In the text box below **Components**, type in: **VM**.
