@@ -82,18 +82,16 @@ challenges:
     title: topology
     url: "https://www.youtube.com/embed/aVyaCZgUolg?autoplay=0&rel=0"
   assignment: |-
-    1. Click on the **menu button** at the left upper corner.
-    2. Select **All View**. This will open the StackState canvas.
-    As you can see, all components and their relations are now visualized.
+    1. As you can see, all components and their relations are now visualized.
     The components are automatically plotted at the right **Layer** and at the right **Domain**.
     This is accomplished by applying our **mapping functionality** to the **discovered components**.
-    3. Click on the **menu button** at the left upper corner again.
-    4. Select some other Views, like **Infrastructure view**, **ITOps** or **Line of Business** and have a look at them.
+    2. Click on the **menu button** at the left upper corner again.
+    3. Select some other Views, like **Infrastructure view**, **ITOps** or **Line of Business** and have a look at them.
     As you can see, StackState is able to only show those components that are relevant to the stakeholder.
     In the next steps we will see how we do so...
-    5. Repeat step 1 and 2 to go back to the All View.
-    6. On the left bar, click the **Grid button**.
-    7. Now click on one or more of the non-greyed-out buttons (**eye**) at the left side of the Layer- or Domain name:
+    4. Repeat step 1 and 2 to go back to the All View.
+    5. On the left bar, click the **Grid button**.
+    6. Now click on one or more of the non-greyed-out buttons (**eye**) at the left side of the Layer- or Domain name:
 
       ![Layers](https://storage.googleapis.com/instruqt-stackstate-assets/topology_7.png)
 
@@ -102,20 +100,20 @@ challenges:
     Dotted lines are now shown. StackState understands there is a relation between components which are connected by these dotted lines, but there are components in between that are not visualized in the view.
     These are what we call **indirect relations**.
 
-    8. Note that an * has been added to the name of the view in the upper bar.
+    7. Note that an * has been added to the name of the view in the upper bar.
     This indicates something has changed in the saved view.
     Go back to the original view, by clicking on the **view: All View** breadcrumb.
 
       ![All view](https://storage.googleapis.com/instruqt-stackstate-assets/challenge_2_allview.png)
 
-    9. At the left bar, click on the **Visualization Settings** button.
+    8. At the left bar, click on the **Visualization Settings** button.
 
       ![Settings](https://storage.googleapis.com/instruqt-stackstate-assets/challenge_2_cog.png)
 
-    10. Change the value in the “Minimum amount of components in a group” field from 8 to 2.
+    9. Change the value in the “Minimum amount of components in a group” field from 8 to 2.
     The result will show a more compact view: Components of the same type, in the same Layer and in the same State, will be grouped together if the number is more than the value set.
     The groups are shown as hexagons.
-    11. Click on one of the groups (one of the hexagons). This will open the right pane which will show all individual members of the group.
+    10. Click on one of the groups (one of the hexagons). This will open the right pane which will show all individual members of the group.
   difficulty: basic
   timelimit: 300
   points: 50
@@ -147,17 +145,15 @@ challenges:
       title: Telemetry
       url: "https://www.youtube.com/embed/zK24uUQAdKY?autoplay=0&rel=0"
   assignment: |-
-    1. Click on the **menu button** at the left upper corner.
-    2. Select **All View**.
-    3. Click **Webserver1** in the **topology view**.
+    1. Click **Webserver1** in the **topology view**.
     The right pane opens and shows telemetry information about the selected component.
-    4. Click **Show More** in the right pane (**Info panel**).
-    5. Click **Tomcat1** in the topology. Have a look at the **Info panel**.
-    6. Click **Webserver1** again. Now click on the **Add Healthcheck button** in the right middle of the right pane:
+    2. Click **Show More** in the right pane (**Info panel**).
+    3. Click **Tomcat1** in the topology. Have a look at the **Info panel**.
+    4. Click **Webserver1** again. Now click on the **Add Healthcheck button** in the right middle of the right pane:
 
       ![Healthcheck](https://storage.googleapis.com/instruqt-stackstate-assets/telemetry_6.png)
 
-    7. This will open the **Check Settings page**. Investigate for yourself (e.g. have a look at all available check functions...).
+    5. This will open the **Check Settings page**. Investigate for yourself (e.g. have a look at all available check functions...).
     With the check function, StackState enables you to put checks (analytical and statistical rules) on metrics and events.
     An example would be setting the threshold for a certain metric. e.g.
     When %CPU used > 80, change component to Deviating Status, when %CPU > 80, change state to Critical.
@@ -172,6 +168,7 @@ challenges:
       title: StackState
       name: stackstate
       port: 7070
+      path: "/#/topology/view/All View/graph"
     external:
     - title: Documentation
       url: https://docs.stackstate.com
@@ -186,26 +183,24 @@ challenges:
         Awesome! Let’s demonstrate the **root cause analysis** capabilities by simulating a **failure-scenario**.
         You’ll experience how StackState gives insight into the **cause and impact** of any **change or failure**.
   assignment: |-
-    1. Click on the **menu button** at the left upper corner.
-    2. Select **All View**.
-    3. Click the **Event Stream button** at the right side of the screen. This will open the **Events pane**. Here you can see all events that took place.
+    1. Click the **Event Stream button** at the right side of the screen. This will open the **Events pane**. Here you can see all events that took place.
     Note that the components in the view also changed color.
     Red means **Critical** and orange means **Deviating**.
 
       ![Event Stream](https://storage.googleapis.com/instruqt-stackstate-assets/root_cause_2.png)
 
-    4. Click on all the **Critical** and **Deviating** components in the topology view. The right pane will now show **in-context information** about the selected component (such as **metric streams** and **alerts/events**).
-    5. Now click the **Problems button** at the right side of the screen.
+    2. Click on all the **Critical** and **Deviating** components in the topology view. The right pane will now show **in-context information** about the selected component (such as **metric streams** and **alerts/events**).
+    3. Now click the **Problems button** at the right side of the screen.
     The right pane now shows the **problems detected** and how they might be related. Note that the **root cause** is displayed at the top of this list.
 
       ![Problem Pane](https://storage.googleapis.com/instruqt-stackstate-assets/root_cause_4.png)
 
-    6. Have look at the “time slider” at the bottom of the page. Click a bit left from the arrow:
+    4. Have look at the “time slider” at the bottom of the page. Click a bit left from the arrow:
 
       ![Time Slider](https://storage.googleapis.com/instruqt-stackstate-assets/root_cause_6.png)
 
     The Topology view now reflects the situation at the selected time. Try selecting different positions on the timeline.
-    7. To return to viewing the live situation, click **Back to live** in the blue bar at the top of the page.
+    5. To return to viewing the live situation, click **Back to live** in the blue bar at the top of the page.
   difficulty: basic
   timelimit: 300
   points: 50
@@ -217,6 +212,7 @@ challenges:
       title: StackState
       name: stackstate
       port: 7070
+      path: "/#/topology/view/All View/graph"
     external:
     - title: Documentation
       url: https://docs.stackstate.com
