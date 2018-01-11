@@ -1,5 +1,6 @@
 template: virtualmachines
 configuration:
+  PoolSize: 3
   VirtualMachines:
   - Image: stackstate-1-7-2
     MachineType: n1-standard-4
