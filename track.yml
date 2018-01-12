@@ -53,14 +53,13 @@ challenges:
   unlocks:
   - topology
   tabs:
-    internal:
-    - type: website
-      title: StackState
-      name: stackstate
-      port: 7070
-    external:
-    - title: Documentation
-      url: https://docs.stackstate.com
+  - type: service
+    title: StackState
+    hostname: stackstate
+    port: 7070
+  - type: website
+    title: Documentation
+    url: https://docs.stackstate.com
 - slug: topology
   credits: 10
   title: Topology
@@ -120,15 +119,14 @@ challenges:
   unlocks:
   - telemetry
   tabs:
-    internal:
-    - type: website
-      title: StackState
-      name: stackstate
-      port: 7070
-      path: "/#/topology/view/All View/graph"
-    external:
-    - title: Documentation
-      url: https://docs.stackstate.com
+  - type: service
+    title: StackState
+    hostname: stackstate
+    port: 7070
+    path: "/#/topology/view/All View/graph"
+  - type: website
+    title: Documentation
+    url: https://docs.stackstate.com
 - slug: telemetry
   credits: 10
   title: Telemetry
@@ -163,15 +161,14 @@ challenges:
   unlocks:
   - root-cause-analysis
   tabs:
-    internal:
-    - type: website
-      title: StackState
-      name: stackstate
-      port: 7070
-      path: "/#/topology/view/All View/graph"
-    external:
-    - title: Documentation
-      url: https://docs.stackstate.com
+  - type: service
+    title: StackState
+    hostname: stackstate
+    port: 7070
+    path: "/#/topology/view/All View/graph"
+  - type: website
+    title: Documentation
+    url: https://docs.stackstate.com
 - slug: root-cause-analysis
   credits: 10
   title: Root cause analysis
@@ -207,15 +204,14 @@ challenges:
   unlocks:
     - impact-analysis
   tabs:
-    internal:
-    - type: website
-      title: StackState
-      name: stackstate
-      port: 7070
-      path: "/#/topology/view/All View/graph"
-    external:
-    - title: Documentation
-      url: https://docs.stackstate.com
+  - type: service
+    title: StackState
+    hostname: stackstate
+    port: 7070
+    path: "/#/topology/view/All View/graph"
+  - type: website
+    title: Documentation
+    url: https://docs.stackstate.com
 - slug: impact-analysis
   credits: 10
   title: Impact Analysis
@@ -248,14 +244,13 @@ challenges:
   points: 50
   unlocks: []
   tabs:
-    internal:
-    - type: website
-      title: StackState
-      name: stackstate
-      port: 7070
-    external:
-    - title: Documentation
-      url: https://docs.stackstate.com
+  - type: service
+    title: StackState
+    hostname: stackstate
+    port: 7070
+  - type: website
+    title: Documentation
+    url: https://docs.stackstate.com
 developers:
 - bas@instruqt.com
 - marts@stackstate.com
